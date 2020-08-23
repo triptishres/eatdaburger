@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-sm-12 col-6 mx-auto">
+            <img src="/assets/img/burger.jpeg" alt="burger" class="my-4 img-fluid">
+        </div>
+    </div>
+
+    <div class="row my-2 py-2">
+        <div class="col-sm-12 col-md-10 offset-md-1">
+            <h1 class="text-center welcome">Eat Da Burger!</h1>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-md-6 my-1">
+            <h2 class="ml-2 pl-3 colTitle">Waiting to be Devoured!</h2>
+            <ul class="list-group">
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/unless}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <div class="col-md-6 my-1">
+            <h2 class="ml-2 pl-3 colTitle">Already Eaten!</h2>
+            <ul class="list-group ml-4">
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+    <div class="row my-2 py-2">
+        <div class="col-sm-12 col-md-10 offset-md-1 text-center">
+
+            <form class="create-form">
+
+                <div class="form-group">
+                     <form class="create-form">
+        <div class="form-group">
+            <label for="name"></label>
+            <textarea id="name" name="burger-name" rows="2" cols="40" placeholder="What do you want to eat?"></textarea>
+        </div>
+        <button type="submit">Add Burger</button>
+    </form>     
+</div>
+
+
+            </form>
+
+        </div>
+    </div>
+
+</div>
+
+ 
