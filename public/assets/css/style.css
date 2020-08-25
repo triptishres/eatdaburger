@@ -6,11 +6,7 @@ img {
     width: 15%;
 }
 
-.red_font {
-    color: #bc001f;
-}
-
-.tiny_text {
-    font-size: 11px;
-    color: #5da82f;
+.btn-success {
+    background-color: #0d8230;
+    color: #ffffff;
 }
