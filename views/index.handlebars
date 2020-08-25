@@ -1,7 +1,7 @@
  <div class="container">
     <div class="row text-center">
         <div class="col-sm-12 col-6 mx-auto">
-            <img src="/public/assets/img/burger.jpg" alt="burger" class="my-4 img-fluid">
+            <img src="/assets/img/burger.jpg" alt="burger" class="my-4 img-fluid">
         </div>
     </div>
 
@@ -24,7 +24,7 @@
         </div>
 
         <div class="col-md-6 my-1">
-            <h2 class="ml-2 pl-3 colTitle">Already be Eaten!</h2>
+            <h2 class="ml-2 pl-3 colTitle">Already Eaten!</h2>
             <ul class="list-group ml-4">
                 {{#each burgers}}
                 {{#if devoured}}
@@ -38,16 +38,36 @@
     <div class="row my-2 py-2">
         <div class="col-sm-12 col-md-10 offset-md-1 text-center">
 
-            <form class="create-form">
+          <form class="create-form">
 
                 <div class="form-group">
-                     <form class="create-form">
-        <div class="form-group">
-            <label for="name"></label>
-            <textarea id="name" name="burger-name" rows="2" cols="40" placeholder="What do you want to eat?"></textarea>
-        </div>
-        <button type="submit">Add Burger</button>
-    </form>     
+                    <label for="burger">
+                        <p class="colTitle">What do you want to eat today?</p>
+                    </label>
+                    <input type="text" id="burger" name="name">
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="devoured" value="0" class="colTitle">
+                    <label for="Eat again">
+                        <p class="colTitle">Eat again!</p>
+                    </label>
+                </div>
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" name="devoured" value="1" class="colTitle">
+                    <label for="devoured">
+                        <p class="colTitle">Devoured.</p>
+                    </label>
+                </div>
+
+                <div class="text-center mt-2">
+                    <button class="btn btn-success" type="submit">
+                        <h5 class="add">Add a Burger</h5>
+                    </button>
+                </div>
+
+            </form>   
 </div>
 
 
