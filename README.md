@@ -5,6 +5,8 @@ Eat Da Burger is an app which lets user to add the name of burger they'd like to
 
 ![Screen Shot 2020-08-27 at 5 32 12 pm](https://user-images.githubusercontent.com/65053335/91411630-f236d780-e88b-11ea-99b3-9903c4a25fb0.png)
 
+Link to the application: https://fast-hollows-50200.herokuapp.com/
+
 This app was built using MySQL, Node, Express,Handlebars and follow the MVC model.
 
 # Installation 
